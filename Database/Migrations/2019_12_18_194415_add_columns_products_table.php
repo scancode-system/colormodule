@@ -14,7 +14,7 @@ class AddColumnsProductsTable extends Migration
     public function up()
     {
         Schema::table('products', function (Blueprint $table) {
-            $table->unsignedBigInteger('color_id')->nullable();
+            $table->unsignedBigInteger('color_id')->nullable()->after('product_category_id');
             $table->foreign('color_id')->references('id')->on('colors')->onDelete('cascade')->onUpdate('cascade');
         });
     }

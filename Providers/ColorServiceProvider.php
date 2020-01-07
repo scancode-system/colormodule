@@ -28,6 +28,7 @@ class ColorServiceProvider extends ServiceProvider
         $this->app->register(RouteServiceProvider::class);
         $this->app->register(ViewComposerServiceProvider::class);
         $this->app->register(RelationshipServiceProvider::class);
+        $this->app->register(EventServiceProvider::class);
     }
 
 

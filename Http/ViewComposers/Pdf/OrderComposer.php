@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Subsidiary\Http\ViewComposers\Pdf;
+namespace Modules\Color\Http\ViewComposers\Pdf;
 
 use Modules\Dashboard\Services\ViewComposer\ServiceComposer;
 use Modules\Subsidiary\Repositories\OrderRepository;

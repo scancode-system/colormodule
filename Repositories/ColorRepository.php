@@ -18,4 +18,9 @@ class ColorRepository
 		return Color::pluck($description, $value);
 	}
 
+	public static function loadByName($name)
+	{
+		return Color::where('name', $name)->first();
+	}
+
 }
