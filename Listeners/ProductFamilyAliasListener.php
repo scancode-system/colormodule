@@ -25,6 +25,13 @@ class ProductFamilyAliasListener
      */
     public function handle($event)
     {
-        return $event->product()->color->name;
+        if($event->product()->color)
+        {
+            return $event->product()->color->name;
+        } else 
+        {
+            return '';
+        }
+
     }
 }
