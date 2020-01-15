@@ -16,7 +16,7 @@ class RelationshipServiceProvider extends ServiceProvider
     public function boot()
     {
         Product::addDynamicRelation('color', function (Product $product) {
-            return $product->belongsTo(Color::class);
+            return $product->belongsTo(Color::class, 'color_id');
         });
 
     }
