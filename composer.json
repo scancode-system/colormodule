@@ -22,5 +22,8 @@
             "Modules\\Color\\": ""
         }
     },
-    "type": "laravel-module"
+    "type": "laravel-module",
+    "require": {
+        "scancode-system/product-module":"^1.0",
+    }
 }
