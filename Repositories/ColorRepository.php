@@ -14,6 +14,10 @@ class ColorRepository
 	}
  
 	// LOAD
+	public static function load(){
+		return Color::all();
+	}
+
 	public static function loadToSelect($value, $description){
 		return Color::pluck($description, $value);
 	}

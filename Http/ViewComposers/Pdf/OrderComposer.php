@@ -1,5 +1,5 @@
 <?php
-
+// Veriicar algo errado com este arquivo talvez deletar como assim depedencia com filiais
 namespace Modules\Color\Http\ViewComposers\Pdf;
 
 use Modules\Dashboard\Services\ViewComposer\ServiceComposer;

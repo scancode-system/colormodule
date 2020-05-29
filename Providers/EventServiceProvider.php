@@ -12,6 +12,9 @@ use Modules\Color\Listeners\ProductFillablesListener;
 use Modules\Product\Events\ProductFamilyAliasEvent;
 use Modules\Color\Listeners\ProductFamilyAliasListener;
 
+use Modules\Product\Events\ProductLazyEagerLoadingEvent;
+use Modules\Color\Listeners\ProductLazyEagerLoadingListener;
+
 class EventServiceProvider extends ServiceProvider 
 {
 
@@ -25,6 +28,7 @@ class EventServiceProvider extends ServiceProvider
 		Event::listen(ProductFillablesEvent::class, ProductFillablesListener::class);
 		Event::listen(BeforeImportEvent::class, BeforeImportProductListener::class);
 		Event::listen(ProductFamilyAliasEvent::class, ProductFamilyAliasListener::class);
+		Event::listen(ProductLazyEagerLoadingEvent::class, ProductLazyEagerLoadingListener::class);
 	}
 
 }
