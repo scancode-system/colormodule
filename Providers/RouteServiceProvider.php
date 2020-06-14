@@ -1,4 +1,4 @@
-<?php
+<?php 
 
 namespace Modules\Color\Providers;
 
@@ -47,7 +47,7 @@ class RouteServiceProvider extends ServiceProvider
     {
         Route::middleware('web')
             ->namespace($this->moduleNamespace)
-            ->group(__DIR__ . '/../Routes/web.php');
+            ->group(module_path('Color', '/Routes/web.php'));
     }
 
 

@@ -24,8 +24,8 @@
     },
     "type": "laravel-module",
     "require": {
-        "scancode-system/product-module":"^1.0",
-        "scancode-system/variation-module":"^1.0"
+        "scancode-system/product-module":"^2.0",
+        "scancode-system/variation-module":"^2.0"
     }
 }
  
